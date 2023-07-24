@@ -34,7 +34,7 @@ var lives = 4;
 
 function makeZombie() {
   randomImage = img[getRandomInt(0, img.length)];
-  gameBody.innerHTML += `<img src="./assets/${randomImage}" class="zombie-image" id="zombie${zombieId}">`;
+  gameBody.innerHTML += `<img src="https://cdn.jsdelivr.net/gh/Kalvium-Program/zombie-shoot-game-final@main/assets/${randomImage}" class="zombie-image" id="zombie${zombieId}">`;
   let zombie = document.getElementById("zombie" + zombieId);
   zombie.style.transform = `translateX(${getRandomInt(20, 80)}vw)`;
   zombie.style.animationDuration = `${getRandomInt(2, 6)}s`;
